@@ -1,0 +1,138 @@
+.numbers {
+    font-weight: 900;
+    font-family: "Merriweather";
+    text-align: center;
+    color: #92E3A9;
+    width: 50px;
+    height: 50px;
+    background: #263238;
+    border-radius: 5px;
+}
+
+.button-black {
+    background-color: #263238;
+    color: #92E3A9;
+    border: 1px solid #263238;
+    border-radius: 5px;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20.11px;
+}
+
+.button-green {
+    background-color: #92E3A9;
+    color: #263238;
+    border: 1px solid #92E3A9;
+    border-radius: 5px;
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20.11px;
+}
+
+.button-white {
+    background-color: white;
+    color: rgba(38, 50, 56, 1);
+    border: none;
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.p-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #263238;
+}
+
+.h-text {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 121.1%;
+    color: #263238;
+}
+
+.form-input {
+    border: 1px solid #263238;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.title-form {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 121.1%;
+    color: #263238;
+}
+
+.label-form {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.close-modal {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    color: #92E3A9;
+    background-color: #263238;
+    border-radius: 100%;
+    border-color: #263238;
+    text-decoration: none;
+}
+
+.tema-frustrare {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #263238;
+    line-height: 18.75px;
+}
+
+.tema-materie {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #92E3A9;
+    line-height: 18.75px;
+}
+
+.modal-title {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.footer-title {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 121.1%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input-border {
+    border: 1px solid #263238!important;
+}
