@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <header class="px-4 mx-4 py-5">
+    <header class="px-lg-4 mx-lg-4 px-2 mx-2 py-5">
         <nav class="navbar navbar-expand-md">
             <a class="navbar-brand float-left" href="/"><img class="img-fluid" src="/img/Logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +22,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link button-black mx-2 px-4" href="/">Logare</a></li>
                     <li class="nav-item"><a class="nav-link button-white mx-2 px-4" href="/">Creare cont</a></li>
-                    <li class="nav-item"><a class="nav-link button-white ml-2 px-4" href="/">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link button-white ml-2 px-4" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,20 +42,20 @@
     </div>
     <div class="container-fluid pb-5" style="background-color: #92E3A9">
         <h1 class="pt-5 pb-5 h-text text-center">Cum funcționează?</h1>
-        <div class="mr-5 pr-5 ml-5 pl-5 row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-3">
+        <div class="mx-md-5 px-md-5 mx-3 px-3 row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
                 <div class="media">
                     <h1 class="mr-3 numbers">1</h1>
                     <p class="media-body p-text">Realizezi un cont pe platformă în care introduci câteva detalii personale (nu vă faceți griji, profesorii nu or să va descopere) și materiile la care ai nevoie de ajutor.</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-5">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
                 <div class="media">
                     <h1 class="mr-3 numbers">2</h1>
                     <p class="media-body p-text">Străbați platforma în căutare de studenți care oferă servicii la materiile dorite sau te rogi la Sfântul 5 să primești mesaj de la cineva care te descoperă și e dispus să te salveze.</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-5">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-5">
                 <div class="media ">
                     <h1 class="mr-3 numbers">3</h1>
                     <p class="media-body p-text">După ce stabiliți o sumă care oricum este de zeci de ori mai mare decât la alte universități, aștepti ca noul vostru amic să vă încarce soluția pe platformă. Jumătate din plată oferiți în avans, restul după ce vă vedeți intrat în examen.</p>
@@ -64,28 +64,28 @@
 
         </div>
     </div>
-    <div class="py-5">
+    <div class="py-5" id="contact">
         <div class="container my-5">
             <div style="box-shadow: 0px 10px 30px rgba(38, 50, 56, 0.2); border-radius: 5px;" class="px-5 py-5 row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <h1 class="text-form text-center text-md-left pb-3">Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h1>
+                    <h1 class="title-form text-center text-md-left pb-3">Ai tupeu și crezi că poți să aduci îmbunătățiri la platformă?</h1>
                     <p class="p-text text-center text-md-left">Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <form action="/php/email.php" method="get">
+                    <form action="/php/email.php" method="post" name="contactForm">
                         <div class="form-group ">
-                            <label class="label-form " for="exampleInputEmail1 ">Nume</label>
-                            <input class="input-border form-control " type="text ">
+                            <label class="label-form " for="nume">Nume</label>
+                            <input class="input-border form-control " type="text " name="nume">
                         </div>
                         <div class="form-group ">
-                            <label class="label-form " for="exampleInputEmail1 ">Email</label>
-                            <input type="email " class="input-border form-control " id="exampleInputEmail1 ">
+                            <label class="label-form " for="email">Email</label>
+                            <input type="email " class="input-border form-control " name="email"  id="email ">
                         </div>
                         <div class="form-group ">
-                            <label class="label-form " for="exampleFormControlTextarea1 ">Înjurătura</label>
-                            <textarea class="form-control input-border" id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                            <label class="label-form " for="injuratura ">Înjurătura</label>
+                            <textarea class="form-control input-border" id="injuratura" name="injuratura" rows="3 "></textarea>
                         </div>
-                        <button class="button-black px-5 py-2 my-3 ">Trimite</button>
+                        <button class="button-black px-5 py-2 my-3 " id="sendInjuratura" name="sendInjuratura" type="submit">Trimite</button>
                     </form>
                 </div>
             </div>
@@ -117,14 +117,14 @@
                     <button type="button" class="close-modal pb-1" data-dismiss="modal" aria-label="Close"><span aria-hidden=" true ">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form class="pb-6" action="/php/add_frustare.php" method="get">
+                    <form class="pb-6" action="/php/add_frustare.php" method="get" onsubmit="return isvalid()">
                         <div class="form-group">
                             <select  type="text" class="form-control input-border" id="materie" name="materie">
                                 <option value="" disabled selected class="form-control">Alege materia</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <input class="form-control input-border" name="frustrare" placeholder="Titlul proiectului">
+                            <input class="form-control input-border" name="frustrare" id="frustrare" placeholder="Titlul proiectului">
                         </div>
                         <div class="text-center">
                             <button class="button-black" style="padding: 8px 50px 8px 50px!important; margin-bottom: 20px!important;" type="submit" >Încarcă</button>
@@ -137,10 +137,6 @@
                 <div class="py-4 pl-4">
                     <?php include 'php/show_frustrare.php';?>
                 </div>
-                <!-- <div class="modal-footer ">
-                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
-                    <button type="button " class="btn btn-primary ">Understood</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -152,15 +148,20 @@
 
 </body>
 <script>
-    fetch('./data/materie.json')
+    fetch('./data/materii.json')
         .then(materii => materii.json())
         .then(materii => {
             materii.forEach(obj => {
-                Object.entries(obj).forEach((optionText) => {
-                    $('#materie').append(`<option class="form-control"> ${optionText[1]} </option>`);
-                });
+                    $('#materie').append(`<option class="form-control"> ${obj} </option>`);
             });
         });
+    function isvalid() {
+        if(!$('#frustrare').val() || !$('#materie').val()) {
+            alert("Completeaza tot formularul!");
+            return false;
+        }
+        return true;
+    }
 </script>
 
 </html>
