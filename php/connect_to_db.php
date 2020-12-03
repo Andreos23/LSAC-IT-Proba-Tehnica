@@ -1,8 +1,10 @@
 <?php
+// Datele de conectare trebuie modificate
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "AjutorDeProgramator";
+
+$dbname = "ajutordeprogramator";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

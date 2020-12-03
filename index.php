@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="px-lg-4 mx-lg-4 px-2 mx-2 py-5">
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand float-left" href="/"><img class="img-fluid" src="/img/Logo.png" alt=""></a>
+            <a class="navbar-brand float-left" href=""><img class="img-fluid" src="img/Logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="collapse_target" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="img/button-colapse.png" alt="">
             </button>
             <div class="collapse navbar-collapse" id="collapse_target">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link button-black mx-2 px-4" href="/">Logare</a></li>
-                    <li class="nav-item"><a class="nav-link button-white mx-2 px-4" href="/">Creare cont</a></li>
+                    <li class="nav-item"><a class="nav-link button-black mx-2 px-4" href="#">Logare</a></li>
+                    <li class="nav-item"><a class="nav-link button-white mx-2 px-4" href="#">Creare cont</a></li>
                     <li class="nav-item"><a class="nav-link button-white ml-2 px-4" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-            <img src="/img/fata.png" class="img-fluid mx-auto d-block float-lg-right" alt="">
+            <img src="img/fata.png" class="img-fluid mx-auto d-block float-lg-right" alt="">
         </div>
     </div>
     <div class="container-fluid pb-5" style="background-color: #92E3A9">
@@ -72,7 +72,7 @@
                     <p class="p-text text-center text-md-left">Trimite-ne un mail și roagă-te să nu ne apuce râsul când vedem ce îți trece prin cap.</p>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <form action="/php/email.php" method="post" name="contactForm">
+                    <form action="php/email.php" method="post" name="contactForm">
                         <div class="form-group ">
                             <label class="label-form " for="nume">Nume</label>
                             <input class="input-border form-control " type="text " name="nume">
@@ -95,13 +95,13 @@
         <div>
             <ul class="list-unstyled list-inline ">
                 <li class="list-inline-item ">
-                    <a href="https://www.instagram.com/"><img src="/img/Instagram.png " alt=" "></a>
+                    <a href="https://www.instagram.com/"><img src="img/Instagram.png " alt=" "></a>
                 </li>
                 <li class="list-inline-item ">
-                    <a href="https://www.twitter.com/"><img src="/img/Twitter.png " alt=" "></a>
+                    <a href="https://www.twitter.com/"><img src="img/Twitter.png " alt=" "></a>
                 </li>
                 <li class="list-inline-item ">
-                    <a href="https://www.facebook.com/"><img src="/img/Facebook.png " alt=" "></a>
+                    <a href="https://www.facebook.com/"><img src="img/Facebook.png " alt=" "></a>
                 </li>
             </ul>
         </div>
@@ -117,7 +117,7 @@
                     <button type="button" class="close-modal pb-1" data-dismiss="modal" aria-label="Close"><span aria-hidden=" true ">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form class="pb-6" action="/php/add_frustare.php" method="get" onsubmit="return isvalid()">
+                    <form class="pb-6" action="php/add_frustare.php" method="get" onsubmit="return isvalid()">
                         <div class="form-group">
                             <select  type="text" class="form-control input-border" id="materie" name="materie">
                                 <option value="" disabled selected class="form-control">Alege materia</option>
@@ -148,7 +148,7 @@
 
 </body>
 <script>
-    fetch('./data/materii.json')
+    fetch('data/materii.json')
         .then(materii => materii.json())
         .then(materii => {
             materii.forEach(obj => {
